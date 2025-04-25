@@ -1,0 +1,191 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="voting-container">
+    <div class="voting-card">
+        <div class="card-header">
+            <h2><i class="fas fa-vote-yea"></i> Cast Your Vote</h2>
+            <p>Select your preferred candidate</p>
+        </div>
+        
+        <form method="POST" action="{{ url_for('cast_vote') }}">
+            <div class="candidates-container">
+                {% for party, candidate in candidates %}
+                <div class="candidate-option">
+                    <input type="radio" class="candidate-radio" id="candidate_{{ loop.index }}" name="party" value="{{ party }}" required>
+                    <label for="candidate_{{ loop.index }}" class="candidate-label">
+                        <div class="candidate-card">
+                            <div class="party-symbol">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                            <div class="candidate-info">
+                                <h4>{{ candidate }}</h4>
+                                <p>{{ party }}</p>
+                            </div>
+                            <div class="check-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <div class="form-group mt-4">
+                <button type="submit" class="btn btn-primary btn-block">Submit Vote</button>
+            </div>
+            
+            <div class="vote-disclaimer">
+                <p><i class="fas fa-info-circle"></i> Your vote is confidential and secure. Once submitted, it cannot be changed.</p>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+    .voting-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+        padding: 40px 20px;
+    }
+    
+    .voting-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 650px;
+        padding: 40px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .voting-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .card-header {
+        text-align: center;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .card-header h2 {
+        color: #3498db;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    .card-header p {
+        color: #777;
+    }
+    
+    .candidates-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .candidate-radio {
+        display: none;
+    }
+    
+    .candidate-card {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border: 2px solid #eee;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .candidate-radio:checked + .candidate-label .candidate-card {
+        border-color: #3498db;
+        background-color: rgba(52, 152, 219, 0.05);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.1);
+    }
+    
+    .party-symbol {
+        width: 60px;
+        height: 60px;
+        background-color: #f8f9fa;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        font-size: 1.8rem;
+        color: #3498db;
+        transition: all 0.3s ease;
+    }
+    
+    .candidate-radio:checked + .candidate-label .party-symbol {
+        background-color: #3498db;
+        color: white;
+    }
+    
+    .candidate-info {
+        flex: 1;
+    }
+    
+    .candidate-info h4 {
+        margin-bottom: 5px;
+        font-weight: 600;
+        color: #333;
+    }
+    
+    .candidate-info p {
+        margin-bottom: 0;
+        color: #777;
+        font-size: 0.9rem;
+    }
+    
+    .check-icon {
+        font-size: 1.5rem;
+        color: transparent;
+        margin-left: 15px;
+        transition: all 0.3s ease;
+    }
+    
+    .candidate-radio:checked + .candidate-label .check-icon {
+        color: #27ae60;
+    }
+    
+    .btn-primary {
+        background: linear-gradient(135deg, #3498db, #2c3e50);
+        border: none;
+        height: 50px;
+        font-weight: 600;
+        border-radius: 8px;
+        margin-top: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+        background: linear-gradient(135deg, #2980b9, #1a252f);
+    }
+    
+    .vote-disclaimer {
+        margin-top: 25px;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #777;
+        padding: 15px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+    }
+    
+    .vote-disclaimer i {
+        color: #e67e22;
+        margin-right: 5px;
+    }
+</style>
+{% endblock %}

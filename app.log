@@ -1,0 +1,112 @@
+2025-04-24 11:47:44,289 - WARNING -  * Debugger is active!
+2025-04-24 11:47:44,293 - INFO -  * Debugger PIN: 122-082-058
+2025-04-24 11:48:15,446 - INFO - 127.0.0.1 - - [24/Apr/2025 11:48:15] "GET / HTTP/1.1" 200 -
+2025-04-24 11:48:15,766 - INFO - 127.0.0.1 - - [24/Apr/2025 11:48:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:48:17,413 - INFO - 127.0.0.1 - - [24/Apr/2025 11:48:17] "GET /register HTTP/1.1" 200 -
+2025-04-24 11:48:17,460 - INFO - 127.0.0.1 - - [24/Apr/2025 11:48:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:48:42,560 - INFO - 127.0.0.1 - - [24/Apr/2025 11:48:42] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-04-24 11:48:42,571 - INFO - 127.0.0.1 - - [24/Apr/2025 11:48:42] "GET /voter-registration HTTP/1.1" 200 -
+2025-04-24 11:48:42,611 - INFO - 127.0.0.1 - - [24/Apr/2025 11:48:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:49:48,375 - INFO - 127.0.0.1 - - [24/Apr/2025 11:49:48] "[32mPOST /voter-registration HTTP/1.1[0m" 302 -
+2025-04-24 11:49:48,466 - INFO - 127.0.0.1 - - [24/Apr/2025 11:49:48] "GET /face-capture HTTP/1.1" 200 -
+2025-04-24 11:49:48,546 - INFO - 127.0.0.1 - - [24/Apr/2025 11:49:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:49:48,556 - INFO - 127.0.0.1 - - [24/Apr/2025 11:49:48] "[36mGET /static/images/ai_face_recognition.jpg HTTP/1.1[0m" 304 -
+2025-04-24 11:49:53,840 - INFO - 127.0.0.1 - - [24/Apr/2025 11:49:53] "GET /video-feed HTTP/1.1" 200 -
+2025-04-24 11:50:02,903 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:02] "POST /start-capture HTTP/1.1" 200 -
+2025-04-24 11:50:03,916 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:03] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:50:04,919 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:04] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:50:05,922 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:05] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:50:06,915 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:06] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:50:07,918 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:07] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:50:09,513 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:09] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:50:16,473 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:16] "GET /stop-camera HTTP/1.1" 200 -
+2025-04-24 11:50:16,522 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:16] "GET /voting HTTP/1.1" 200 -
+2025-04-24 11:50:16,586 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:50:19,825 - INFO - Vote recorded for Aadhar ID: 597521012332, Voter ID: XYZ1294572, Time: 2025-04-24 11:50:19
+2025-04-24 11:50:19,826 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:19] "[32mPOST /cast-vote HTTP/1.1[0m" 302 -
+2025-04-24 11:50:19,843 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:19] "GET /thank-you HTTP/1.1" 200 -
+2025-04-24 11:50:19,940 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:50:19,948 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:19] "GET /static/images/ai_voting.jpg HTTP/1.1" 200 -
+2025-04-24 11:50:28,431 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:28] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-24 11:50:28,448 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:28] "GET / HTTP/1.1" 200 -
+2025-04-24 11:50:28,519 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:50:30,474 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:30] "GET /login HTTP/1.1" 200 -
+2025-04-24 11:50:30,533 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:50:34,176 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:34] "GET /register HTTP/1.1" 200 -
+2025-04-24 11:50:34,243 - INFO - 127.0.0.1 - - [24/Apr/2025 11:50:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:51:06,273 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:06] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-04-24 11:51:06,285 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:06] "GET /voter-registration HTTP/1.1" 200 -
+2025-04-24 11:51:06,354 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:51:30,272 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:30] "[32mPOST /voter-registration HTTP/1.1[0m" 302 -
+2025-04-24 11:51:30,293 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:30] "GET /face-capture HTTP/1.1" 200 -
+2025-04-24 11:51:30,350 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:51:30,353 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:30] "[36mGET /static/images/ai_face_recognition.jpg HTTP/1.1[0m" 304 -
+2025-04-24 11:51:34,771 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:34] "GET /video-feed HTTP/1.1" 200 -
+2025-04-24 11:51:38,931 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:38] "POST /start-capture HTTP/1.1" 200 -
+2025-04-24 11:51:39,942 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:39] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:51:40,968 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:40] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:51:41,944 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:41] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:51:42,954 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:42] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:51:43,949 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:43] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:51:44,952 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:44] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:51:45,954 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:45] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:51:46,946 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:46] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:51:48,079 - INFO - 127.0.0.1 - - [24/Apr/2025 11:51:48] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:52:10,409 - INFO - 127.0.0.1 - - [24/Apr/2025 11:52:10] "POST /start-capture HTTP/1.1" 200 -
+2025-04-24 11:52:11,472 - INFO - 127.0.0.1 - - [24/Apr/2025 11:52:11] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:52:18,992 - INFO - 127.0.0.1 - - [24/Apr/2025 11:52:18] "GET /voter-registration HTTP/1.1" 200 -
+2025-04-24 11:52:22,006 - INFO - 127.0.0.1 - - [24/Apr/2025 11:52:22] "GET /register HTTP/1.1" 200 -
+2025-04-24 11:52:24,992 - INFO - 127.0.0.1 - - [24/Apr/2025 11:52:24] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-24 11:52:25,009 - INFO - 127.0.0.1 - - [24/Apr/2025 11:52:25] "GET / HTTP/1.1" 200 -
+2025-04-24 11:52:25,086 - INFO - 127.0.0.1 - - [24/Apr/2025 11:52:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:53:41,969 - INFO - 127.0.0.1 - - [24/Apr/2025 11:53:41] "GET /register HTTP/1.1" 200 -
+2025-04-24 11:53:42,045 - INFO - 127.0.0.1 - - [24/Apr/2025 11:53:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:54:30,471 - INFO - 127.0.0.1 - - [24/Apr/2025 11:54:30] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-04-24 11:54:30,480 - INFO - 127.0.0.1 - - [24/Apr/2025 11:54:30] "GET /voter-registration HTTP/1.1" 200 -
+2025-04-24 11:54:30,546 - INFO - 127.0.0.1 - - [24/Apr/2025 11:54:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:54:48,184 - INFO - 127.0.0.1 - - [24/Apr/2025 11:54:48] "[32mPOST /voter-registration HTTP/1.1[0m" 302 -
+2025-04-24 11:54:48,207 - INFO - 127.0.0.1 - - [24/Apr/2025 11:54:48] "GET /face-capture HTTP/1.1" 200 -
+2025-04-24 11:54:48,279 - INFO - 127.0.0.1 - - [24/Apr/2025 11:54:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:54:48,286 - INFO - 127.0.0.1 - - [24/Apr/2025 11:54:48] "[36mGET /static/images/ai_face_recognition.jpg HTTP/1.1[0m" 304 -
+2025-04-24 11:54:48,307 - INFO - 127.0.0.1 - - [24/Apr/2025 11:54:48] "GET /video-feed HTTP/1.1" 200 -
+2025-04-24 11:54:57,404 - INFO - 127.0.0.1 - - [24/Apr/2025 11:54:57] "POST /start-capture HTTP/1.1" 200 -
+2025-04-24 11:54:58,418 - INFO - 127.0.0.1 - - [24/Apr/2025 11:54:58] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:55:00,078 - INFO - 127.0.0.1 - - [24/Apr/2025 11:55:00] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:55:06,505 - INFO - 127.0.0.1 - - [24/Apr/2025 11:55:06] "GET /stop-camera HTTP/1.1" 200 -
+2025-04-24 11:55:06,552 - INFO - 127.0.0.1 - - [24/Apr/2025 11:55:06] "GET /voting HTTP/1.1" 200 -
+2025-04-24 11:55:06,610 - INFO - 127.0.0.1 - - [24/Apr/2025 11:55:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:55:15,370 - INFO - Vote recorded for Aadhar ID: 597521012231, Voter ID: XYZ1294552, Time: 2025-04-24 11:55:15
+2025-04-24 11:55:15,371 - INFO - 127.0.0.1 - - [24/Apr/2025 11:55:15] "[32mPOST /cast-vote HTTP/1.1[0m" 302 -
+2025-04-24 11:55:15,385 - INFO - 127.0.0.1 - - [24/Apr/2025 11:55:15] "GET /thank-you HTTP/1.1" 200 -
+2025-04-24 11:55:15,462 - INFO - 127.0.0.1 - - [24/Apr/2025 11:55:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:55:15,467 - INFO - 127.0.0.1 - - [24/Apr/2025 11:55:15] "[36mGET /static/images/ai_voting.jpg HTTP/1.1[0m" 304 -
+2025-04-24 11:55:26,289 - INFO - 127.0.0.1 - - [24/Apr/2025 11:55:26] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-24 11:55:26,301 - INFO - 127.0.0.1 - - [24/Apr/2025 11:55:26] "GET / HTTP/1.1" 200 -
+2025-04-24 11:55:26,367 - INFO - 127.0.0.1 - - [24/Apr/2025 11:55:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:55:27,785 - INFO - 127.0.0.1 - - [24/Apr/2025 11:55:27] "GET /register HTTP/1.1" 200 -
+2025-04-24 11:55:27,839 - INFO - 127.0.0.1 - - [24/Apr/2025 11:55:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:55:54,172 - INFO - 127.0.0.1 - - [24/Apr/2025 11:55:54] "[32mPOST /register HTTP/1.1[0m" 302 -
+2025-04-24 11:55:54,181 - INFO - 127.0.0.1 - - [24/Apr/2025 11:55:54] "GET /voter-registration HTTP/1.1" 200 -
+2025-04-24 11:55:54,253 - INFO - 127.0.0.1 - - [24/Apr/2025 11:55:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:56:21,050 - INFO - 127.0.0.1 - - [24/Apr/2025 11:56:21] "[32mPOST /voter-registration HTTP/1.1[0m" 302 -
+2025-04-24 11:56:21,071 - INFO - 127.0.0.1 - - [24/Apr/2025 11:56:21] "GET /face-capture HTTP/1.1" 200 -
+2025-04-24 11:56:21,139 - INFO - 127.0.0.1 - - [24/Apr/2025 11:56:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:56:21,149 - INFO - 127.0.0.1 - - [24/Apr/2025 11:56:21] "[36mGET /static/images/ai_face_recognition.jpg HTTP/1.1[0m" 304 -
+2025-04-24 11:56:22,882 - INFO - 127.0.0.1 - - [24/Apr/2025 11:56:22] "POST /start-capture HTTP/1.1" 200 -
+2025-04-24 11:56:23,910 - INFO - 127.0.0.1 - - [24/Apr/2025 11:56:23] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:56:24,910 - INFO - 127.0.0.1 - - [24/Apr/2025 11:56:24] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:56:25,348 - INFO - 127.0.0.1 - - [24/Apr/2025 11:56:25] "GET /video-feed HTTP/1.1" 200 -
+2025-04-24 11:56:25,913 - INFO - 127.0.0.1 - - [24/Apr/2025 11:56:25] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:56:26,931 - INFO - 127.0.0.1 - - [24/Apr/2025 11:56:26] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:56:28,230 - INFO - 127.0.0.1 - - [24/Apr/2025 11:56:28] "GET /check-capture-status HTTP/1.1" 200 -
+2025-04-24 11:56:45,412 - INFO - 127.0.0.1 - - [24/Apr/2025 11:56:45] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-04-24 11:56:45,422 - INFO - 127.0.0.1 - - [24/Apr/2025 11:56:45] "GET / HTTP/1.1" 200 -
+2025-04-24 11:56:45,489 - INFO - 127.0.0.1 - - [24/Apr/2025 11:56:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-24 11:57:02,995 - INFO - 127.0.0.1 - - [24/Apr/2025 11:57:02] "GET / HTTP/1.1" 200 -
+2025-04-24 11:57:03,066 - INFO - 127.0.0.1 - - [24/Apr/2025 11:57:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-04-25 10:21:33,961 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-25 10:21:33,962 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-25 10:21:33,969 - INFO -  * Restarting with stat
+2025-04-25 10:21:36,499 - WARNING -  * Debugger is active!
+2025-04-25 10:21:36,511 - INFO -  * Debugger PIN: 106-275-396

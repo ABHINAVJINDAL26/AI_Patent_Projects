@@ -1,0 +1,12 @@
+opencv-python
+scikit-learn
+pywin32
+pandas
+openpyxl
+pyqt5
+bcrypt
+pillow
+flask
+flask-wtf
+flask-bootstrap
+flask-login

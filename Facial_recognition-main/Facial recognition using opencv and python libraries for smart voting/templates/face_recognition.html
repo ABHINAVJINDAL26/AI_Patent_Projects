@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+
+{% block title %}Face Recognition - AI Smart Voting System{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card">
+            <h2 class="card-title">Face Recognition</h2>
+            <p class="text-center mb-4">Please look at the camera for face verification before voting.</p>
+            
+            <div class="video-container">
+                <img id="video-feed" src="{{ url_for('video_feed') }}" alt="Video Feed">
+                <div id="recognition-overlay" class="capture-overlay" style="display: none;">
+                    <span id="recognition-status">Recognizing your face...</span>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <button id="capture-image" class="btn btn-primary">Verify My Face</button>
+                <button id="continue-btn" class="btn btn-success" style="display: none;">Continue to Voting</button>
+            </div>
+            
+            <div class="alert alert-info mt-4">
+                <i class="fas fa-info-circle"></i> Please ensure you are in a well-lit area and your face is clearly visible to the camera. The system will verify your identity using facial recognition.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <h3 class="card-title">Secure Voting with AI</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Our facial recognition system ensures:</p>
+                    <ul>
+                        <li>Only you can vote with your credentials</li>
+                        <li>Prevents impersonation and fraud</li>
+                        <li>Quick and seamless verification</li>
+                        <li>High accuracy with advanced AI algorithms</li>
+                    </ul>
+                    <p class="mt-3">This technology is part of our multi-factor authentication system that makes our voting process secure and trustworthy.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ url_for('static', filename='images/secure_voting_ai.jpg') }}" alt="Secure Voting with AI" class="img-fluid" style="border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    $(document).ready(function() {
+        // Make sure the button is enabled when the page loads
+        $('#capture-image').prop('disabled', false);
+        
+        // Check if video feed is loaded
+        $('#video-feed').on('load', function() {
+            // Enable the button when video feed is loaded
+            $('#capture-image').prop('disabled', false);
+        });
+        
+        // Capture image for recognition
+        $('#capture-image').click(function() {
+            // Show overlay
+            $('#recognition-overlay').show();
+            
+            // Disable button
+            $(this).prop('disabled', true);
+            
+            // Create a canvas element
+            const canvas = document.createElement('canvas');
+            const video = document.getElementById('video-feed');
+            canvas.width = video.width;
+            canvas.height = video.height;
+            
+            // Draw the current video frame on the canvas
+            const context = canvas.getContext('2d');
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            
+            // Convert canvas to blob
+            canvas.toBlob(function(blob) {
+                // Create form data
+                const formData = new FormData();
+                formData.append('image', blob, 'face.jpg');
+                
+                // Send the image for recognition
+                $.ajax({
+                    url: "{{ url_for('recognize_face') }}",
+                    type: 'POST',
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function(data) {
+                        if (data.status === 'success') {
+                            // Update UI
+                            $('#recognition-status').text('Face recognized successfully!');
+                            
+                            // Show continue button
+                            $('#continue-btn').show();
+                            
+                            // Show success message
+                            alert('Face recognized successfully! You can now proceed to voting.');
+                        } else {
+                            // Show error message
+                            alert('Error: ' + data.message);
+                            
+                            // Reset UI
+                            $('#recognition-overlay').hide();
+                            $('#capture-image').prop('disabled', false);
+                        }
+                    },
+                    error: function() {
+                        // Show error message
+                        alert('Error: Failed to communicate with the server.');
+                        
+                        // Reset UI
+                        $('#recognition-overlay').hide();
+                        $('#capture-image').prop('disabled', false);
+                    }
+                });
+            }, 'image/jpeg');
+        });
+        
+        // Continue to voting
+        $('#continue-btn').click(function() {
+            // Stop the camera
+            $.get("{{ url_for('stop_camera') }}", function() {
+                // Redirect to voting page
+                window.location.href = "{{ url_for('voting') }}";
+            });
+        });
+    });
+</script>
+{% endblock %}

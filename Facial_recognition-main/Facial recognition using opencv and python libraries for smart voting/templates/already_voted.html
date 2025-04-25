@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}Already Voted - AI Smart Voting System{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card text-center">
+            <h2 class="card-title">You Have Already Voted</h2>
+            
+            <div class="mt-4 mb-4">
+                <i class="fas fa-exclamation-circle" style="font-size: 5rem; color: var(--warning-color);"></i>
+            </div>
+            
+            <p class="mb-4">Our records show that you have already cast your vote in this election. Each voter is allowed to vote only once.</p>
+            
+            <div class="alert alert-warning">
+                <i class="fas fa-info-circle"></i> If you believe this is an error, please contact the election officials with your Voter ID and Aadhar ID for verification.
+            </div>
+            
+            <div class="mt-4">
+                <a href="{{ url_for('logout') }}" class="btn btn-primary">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <h3 class="card-title">One Person, One Vote</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{{ url_for('static', filename='images/one_vote.jpg') }}" alt="One Person, One Vote" class="img-fluid" style="border-radius: 8px;">
+                </div>
+                <div class="col-md-6">
+                    <p>Our AI-powered voting system ensures:</p>
+                    <ul>
+                        <li>Each eligible voter can cast only one vote</li>
+                        <li>Facial recognition prevents impersonation</li>
+                        <li>Voter ID and Aadhar verification confirms identity</li>
+                        <li>Secure database tracks voting status</li>
+                    </ul>
+                    <p class="mt-3">These measures maintain the integrity of the democratic process and ensure fair elections for all citizens.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

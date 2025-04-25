@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}Thank You - AI Smart Voting System{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card text-center">
+            <h2 class="card-title">Thank You for Voting!</h2>
+            
+            <div class="mt-4 mb-4">
+                <i class="fas fa-check-circle" style="font-size: 5rem; color: var(--secondary-color);"></i>
+            </div>
+            
+            <p class="mb-4">Your vote has been recorded successfully. Thank you for participating in the democratic process.</p>
+            
+            <div class="alert alert-success">
+                <i class="fas fa-info-circle"></i> Your vote is confidential and secure. The system only records that you have voted, not who you voted for.
+            </div>
+            
+            <div class="mt-4">
+                <a href="{{ url_for('logout') }}" class="btn btn-primary">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-md-12">
+        <div class="card">
+            <h3 class="card-title">AI-Powered Voting System</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Our AI-powered voting system offers several advantages:</p>
+                    <ul>
+                        <li>Enhanced security with facial recognition</li>
+                        <li>Prevention of duplicate voting</li>
+                        <li>Fast and efficient voting process</li>
+                        <li>Accurate vote counting</li>
+                        <li>Transparent and trustworthy results</li>
+                    </ul>
+                    <p class="mt-3">We're constantly improving our system to make the voting process more secure, accessible, and efficient for all citizens.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ url_for('static', filename='images/ai_voting.jpg') }}" alt="AI Voting" class="img-fluid" style="border-radius: 8px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
